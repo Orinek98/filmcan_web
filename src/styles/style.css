@@ -17,7 +17,7 @@ h1, h2, h3{
 	margin: 0px 0px;
 }
 
-body {
+/* body {
 	display: flex;
 	width: 100vw;
 	height: 100vh;
@@ -27,7 +27,7 @@ body {
 	box-sizing: border-box;
 	animation: fadeInFromNone 1s ease-out;
 	animation-delay: 1.5s;
-}	
+}	 */
 
 @keyframes fadeInFromNone {
     0% {
@@ -52,13 +52,16 @@ body {
 
 
 .landing-video {
-	display: flex;
+	/* display: flex;
 	position: fixed;
 	right: 0;
 	bottom: 0;
 	width: 100vw;
 	height: 100vh;
 	padding: 0px 0px;
+	z-index: -1; */
+	width: 100%;
+
 }
 
 .landing-video video {
@@ -86,18 +89,20 @@ body {
 /*+++++++++++++++++++++++++++++++++++++++ NAVBAR +++++++++++++++++++++*/
 /*+++++++++++++++++++++++++++++++++++++++ NAVBAR +++++++++++++++++++++*/
 
-.navbar {
+.navbarOld {
 	position: absolute;
-	top: 60%;
-	left: 0;
+	width: min-content;
+	top: 50%;
+	padding: 0px 0px;
+	/* left: 5%;  */
 }
 
-.navbar ul>li {
+.navbarOld ul>li {
 	position: relative;
 	list-style: none;
 }
 
-.navbar ul>li>div {
+.navbarOld ul>li>div {
 	display: inline-block;
 	position: relative;
 
@@ -106,7 +111,7 @@ body {
 	}
 }
 
-.navbar ul>li>div>a {
+.navbarOld ul>li>div>a {
 	font-size: 2.7rem;
 	color: #FEFCFF;
 	line-height: 3.8rem;
@@ -116,7 +121,7 @@ body {
 }
 
 
-.navbar ul>li>div>a::before {
+.navbarOld ul>li>div>a::before {
 	content: ' ';
 	display: inline-block;
 	transform: translate(-80%, -20%) scaleX(0);
@@ -130,13 +135,13 @@ body {
 
 }
 
-.navbar ul>li>div>a:hover::before {
+.navbarOld ul>li>div>a:hover::before {
 	transform: translate(-80%, -20%) scaleX(1) rotate(-0.5turn);
 
 }
 
 
-.navbar ul>li>div>a::after {
+.navbarOld ul>li>div>a::after {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -149,7 +154,7 @@ body {
 	transition: transform 0.45s ease-out;
 }
 
-.navbar ul>li>div>a:hover::after {
+.navbarOld ul>li>div>a:hover::after {
 	transform: scaleX(1);
 	transform-origin: bottom left;
 

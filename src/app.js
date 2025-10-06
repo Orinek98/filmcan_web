@@ -1,13 +1,10 @@
-// /src/App.js
-import Header from './components/Navbar.js';
-// import Footer from './components/Footer.js';
-// import Home from './components/Home.js';
+import Landing from './components/Landing.js';
 
 export default function App() {
   const app = document.createElement('div');
   app.id = 'app';
-  app.appendChild(Header());
-//   app.appendChild(Home());
-//   app.appendChild(Footer());
+  app.className = 'container-fluid vw-100 vh-100 p-0';
+  app.appendChild(Landing());
+
   return app;
 }

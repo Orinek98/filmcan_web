@@ -1,0 +1,6 @@
+# Ignora la directory 'node_modules' ovunque
+node_modules/
+
+# Ignora la directory 'dist' e 'build' solo se sono nella root del progetto
+/dist/
+/build/
